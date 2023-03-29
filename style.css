@@ -1,0 +1,39 @@
+header {
+    text-align: center;
+}
+
+#monsterboxes {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-content: center;
+    align-items: center;
+}
+
+#monster1 {
+    grid-column: 2;
+}
+
+#monster2 {
+    grid-column: 4;
+}
+
+body {
+    background-image: url("https://php-noise.com/images/noise_r150-g67-b125-t30-tS5-bW3-mB-mu1.5-st5_36eaa7fb0219facec0166a18d150b036.png");
+}
+
+footer {
+    text-align: center;
+}
+
+footer a {
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 3%;
+    font-size: 40px;
+}
+
+#aboutpage {
+    text-align: center;
+    margin: 30% 25%;
+    font-size: 100px;
+}
