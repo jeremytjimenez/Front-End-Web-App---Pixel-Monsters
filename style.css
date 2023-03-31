@@ -2,38 +2,158 @@ header {
     text-align: center;
 }
 
+header h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    color: rgb(254, 0, 0);
+    text-shadow: 1px 1px 2px black, 0px 0px 10px aliceblue, 0px 5px 20px azure;
+}
+
 #monsterboxes {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(21, 1fr);
     align-content: center;
-    align-items: center;
 }
 
 #monster1 {
-    grid-column: 2;
+    grid-column: 7;
+    text-align: center;
+    padding: 30px;
+    font-size: 30px;
+    background: radial-gradient(rgb(73, 71, 71), rgb(245, 216, 221));
+    box-shadow: 0px 0px 15px aliceblue, 0px 5px 20px aliceblue;
+    border: 2px ridge gray;
+    border-radius: 15px;
 }
 
 #monster2 {
-    grid-column: 4;
+    grid-column: 15;
+    text-align: center;
+    padding: 30px;
+    font-size: 30px;
+    background: radial-gradient(rgb(77, 72, 73), rgb(239, 210, 215));
+    box-shadow: 0px 0px 15px aliceblue, 0px 5px 20px aliceblue;
+    border: 2px ridge gray;
+    border-radius: 15px;
+}
+
+#stats1 {
+    text-align: center;
+    grid-column: 1 / span 2;
+    border: 2px solid gray;
+    border-radius: 30px;
+    max-height: 120px;
+    padding: 5px;
+    background: linear-gradient(silver, pink);
+}
+
+#stats2 {
+    text-align: center;
+    grid-column: 20 / span 2;
+    border: 2px solid gray;
+    border-radius: 30px;
+    padding: 5px;
+    background: linear-gradient(silver, pink);
+}
+
+#stats1,
+#stats2 {
+    width: 10px;
+    height: 10px;
+    transition: width 1s, height 1s;
+}
+
+#stats1:hover,
+#stats2:hover {
+    width: 120px;
+    height: 120px;
+}
+
+#stats1 p,
+#stats2 p {
+    color: blue;
+    text-shadow: 1px 1px 2px rgb(167, 165, 165), 0px 0px 10px rgb(102, 171, 232), 0px 5px 20px rgb(83, 225, 225);
+    opacity: 0%;
+    transition: opacity 1s
+}
+
+#stats1 p:hover,
+#stats2 p:hover {
+    opacity: 100%
+}
+
+#monster1 p,
+#monster2 p {
+    color: blue;
+    text-shadow: 1px 1px 2px black, 0px 0px 10px aliceblue, 0px 5px 20px azure;
+}
+
+#monsterform {
+    display: grid;
+    grid-template-columns: repeat(21, 1fr);
+}
+
+#monsterform form {
+    display: grid;
+    grid-template-columns: 3fr 1fr 3fr;
+    grid-template-rows: 3fr 1fr;
+    grid-column: 11;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: blue;
+}
+
+#monsterform form fieldset {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 3fr 1fr;
+    border: 3px solid rgb(101, 99, 99);
+    border-radius: 20px;
+    background: radial-gradient(aliceblue, rgb(140, 222, 222));
+}
+
+#mform1 {
+    grid-column: 1;
+    padding-right: 5%;
+}
+
+#name1 {
+    margin-right: 5%;
+}
+
+#mform2 {
+    grid-column: 3;
+}
+
+#submitbutton {
+    align-items: center;
+    grid-column: span 3;
+    grid-row: 2;
+    margin-left: 40%;
+    margin-top: 10%;
+}
+
+#submitbutton button:hover {
+    color: blue;
 }
 
 body {
-    background-image: url("https://php-noise.com/images/noise_r150-g67-b125-t30-tS5-bW3-mB-mu1.5-st5_36eaa7fb0219facec0166a18d150b036.png");
+    background-image: url("./assets/mainpageplaceholder.png");
 }
 
 footer {
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(21, 1fr);
 }
 
 footer a {
+    border: 2px solid blue;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(138, 182, 221);
     position: fixed;
     bottom: 0;
-    margin-bottom: 3%;
-    font-size: 40px;
-}
-
-#aboutpage {
-    text-align: center;
-    margin: 30% 25%;
-    font-size: 100px;
+    left: 48%;
+    margin-bottom: 1%;
+    font-size: 20px;
+    opacity: 40%;
 }

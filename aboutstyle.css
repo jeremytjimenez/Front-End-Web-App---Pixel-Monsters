@@ -1,0 +1,29 @@
+#aboutpage {
+    color: rgb(21, 0, 255);
+    text-align: center;
+    font-size: 50px;
+    margin-top: 10%;
+    text-shadow: 1px 1px 2px black, 0px 0px 10px aliceblue, 0px 5px 20px azure;
+    grid-row: 2;
+    box-shadow: 0px 0px 50px black;
+    padding: 100px;
+    border-radius: 400px;
+    max-width: 500px;
+    max-height: 550px;
+    background-image: url("./assets/aboutpage\ p\ background.png");
+}
+
+header {
+    text-align: center;
+}
+
+body {
+    background-image: url("./assets/aboutpagebackground.png");
+    display: grid;
+    grid-template-rows: 50px 1000px;
+    justify-content: center;
+}
+
+a {
+    font-size: 30px
+}
