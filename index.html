@@ -4,71 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UNTITLED</title>
+    <title>DEATH</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="app.js"></script>
 </head>
 <body>
     <header>
-        <h1>BRUTAL DEATH BATTLE</h1>
+        <h1>VERY CALM DEATH BATTLE</h1>
     </header>
     <main>
         <section id="monsterboxes">
-            <div id="stats1">
-                <p>STR: ???</p>
-                <p>AGI: ???</p>
-                <p>INT: ???</p>
+            <div id="m1stats">
+                <p id="m1str">STR: ???</p>
+                <p id="m1agi">AGI: ???</p>
+                <p id="m1int">INT: ???</p>
             </div>
-            <div id="monster1">
+            <div id="m1">
                 <img src="./assets/1.png">
-                <p>Joseph</p>
-                <p>HP: ???</p>
+                <p id="m1boxname">Joseph</p>
+                <p id="m1hp">HP: ???</p>
             </div>
-            <div id="monster2">
+            <p id="infosplash"></p>
+            <div id="m2">
                 <img src="./assets/2.png">
-                <p>Henry</p>
-                <p>HP: ???</p>
+                <p id="m2boxname">Henry</p>
+                <p id="m2hp">HP: ???</p>
             </div>
-            <div id="stats2">
-                <p>STR: ???</p>
-                <p>AGI: ???</p>
-                <p>INT: ???</p>
+            <div id="m2stats">
+                <p id="m2str">STR: ???</p>
+                <p id="m2agi">AGI: ???</p>
+                <p id="m2int">INT: ???</p>
             </div>
         </section>
         <section id="monsterform">
             <form>
                 <fieldset>
-                    <div id="mform1">
+                    <div id="m1form">
                         <label for="name1">Name?</label>
-                        <input type="text" id="name1">
-                        <input type="radio" name="m1class">
-                        <label>Warrior</label>
+                        <input type="text" id="m1name">
+                        <input type="radio" name="m1class" id="m1warrior" checked>
+                        <label for="m1warrior">Warrior</label>
                     </br>
-                        <input type="radio" name="m1class">
-                        <label>Caster</label>
+                        <input type="radio" name="m1class" id="m1caster">
+                        <label for="m1caster">Caster</label>
                     </br>
-                        <input type="radio" name="m1class">
-                        <label>Archer</label>
+                        <input type="radio" name="m1class" id="m1archer">
+                        <label for="m1archer">Archer</label>
                     </div>
                 </fieldset>
                 <fieldset>
-                    <div id="mform2">
+                    <div id="m1form">
                         <label for="name2">Name?</label>
-                        <input type="text" id="name2">
-                        <input type="radio" name="m2class">
-                        <label>Warrior</label>
+                        <input type="text" id="m2name">
+                        <input type="radio" name="m2class" id="m2warrior" checked>
+                        <label for="m2warrior">Warrior</label>
                     </br>
-                        <input type="radio" name="m2class">
-                        <label>Caster</label>
+                        <input type="radio" name="m2class" id="m2caster">
+                        <label for="m2caster">Caster</label>
                     </br>
-                        <input type="radio" name="m2class">
-                        <label>Archer</label>
+                        <input type="radio" name="m2class" id="m2archer">
+                        <label for="m2archer">Archer</label>
                     </div>
                 </fieldset>
                 <div id="submitbutton">
                     <button type="submit">Create!</button>
                 </div>
-
+            </form>
+        </section>
+        <section id="fightform">
+            <form>
+                <fieldset>
+                    <select name="m1fight" id="m1fight">
+                        <option value="defend">Defend</option>
+                        <option value="evade">Evade</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <select name="m2fight" id="m2fight">
+                        <option value="defend">Defend</option>
+                        <option value="evade">Evade</option>
+                    </select>
+                </fieldset>
+                <div id="fightbutton">
+                    <button type="submit">FIGHT!!!</button>
+                </div>
             </form>
         </section>
     </main>
