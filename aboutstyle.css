@@ -2,6 +2,7 @@
     color: rgb(21, 0, 255);
     text-align: center;
     font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 10%;
     text-shadow: 1px 1px 2px black, 0px 0px 10px aliceblue, 0px 5px 20px azure;
     grid-row: 2;
@@ -11,6 +12,10 @@
     max-width: 500px;
     max-height: 550px;
     background-image: url("./assets/aboutpage\ p\ background.png");
+}
+
+#aboutpage:hover {
+    box-shadow: 0px 0px 50px rgb(255, 0, 0);
 }
 
 header {
@@ -24,6 +29,22 @@ body {
     justify-content: center;
 }
 
+#name {
+    color: red;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#name:hover {
+    color:blueviolet
+}
+
 a {
     font-size: 30px
 }
+
+main div {
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+

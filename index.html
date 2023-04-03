@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DEATH</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/skull-crossbone-png.png">
     <script defer src="app.js"></script>
 </head>
 <body>
@@ -20,15 +21,20 @@
                 <p id="m1int">INT: ???</p>
             </div>
             <div id="m1">
-                <img src="./assets/1.png">
-                <p id="m1boxname">Joseph</p>
-                <p id="m1hp">HP: ???</p>
+                <img src="./assets/Black_question_mark.png">
+                <p id="m1boxname">???</p>
+                <p id="m1hp">HP: <span id="m1hpnumber">???</span></p>
             </div>
-            <p id="infosplash"></p>
+            <p id="infosplash">
+            </p>
+            <div id="combatlog">
+                <p>Combat Log</p>
+                <ul id="loglist"></ul>
+            </div>
             <div id="m2">
-                <img src="./assets/2.png">
-                <p id="m2boxname">Henry</p>
-                <p id="m2hp">HP: ???</p>
+                <img src="./assets/Black_question_mark.png">
+                <p id="m2boxname">???</p>
+                <p id="m2hp">HP: <span id="m2hpnumber">???</span></p>
             </div>
             <div id="m2stats">
                 <p id="m2str">STR: ???</p>
@@ -40,7 +46,7 @@
             <form>
                 <fieldset>
                     <div id="m1form">
-                        <label for="name1">Name?</label>
+                        <label for="m1name">Name?</label>
                         <input type="text" id="m1name">
                         <input type="radio" name="m1class" id="m1warrior" checked>
                         <label for="m1warrior">Warrior</label>
@@ -54,7 +60,7 @@
                 </fieldset>
                 <fieldset>
                     <div id="m1form">
-                        <label for="name2">Name?</label>
+                        <label for="m2name">Name?</label>
                         <input type="text" id="m2name">
                         <input type="radio" name="m2class" id="m2warrior" checked>
                         <label for="m2warrior">Warrior</label>
@@ -72,7 +78,7 @@
             </form>
         </section>
         <section id="fightform">
-            <form>
+            <form class="fight">
                 <fieldset>
                     <select name="m1fight" id="m1fight">
                         <option value="defend">Defend</option>
@@ -89,6 +95,9 @@
                     <button type="submit">FIGHT!!!</button>
                 </div>
             </form>
+            <div id="resetbutton">
+                <button type="submit">again?</button>
+            </div>
         </section>
     </main>
     <footer>
