@@ -1,5 +1,10 @@
-let pixelMonsterImg = "https://app.pixelencounter.com/api/basic/monsters/random/png?size=200";
-let pixelMonsterImg2 = "https://app.pixelencounter.com/api/basic/monsters/random/png?size=190";
+let pixelMonsterImg = "https://app.pixelencounter.com/api/basic/monsters/random/png?size=";
+let pixelMonsterImg2 = "https://app.pixelencounter.com/api/basic/monsters/random/png?size=";
+
+let pixelMonsterSizes = {
+    m1: 190,
+    m2: 200
+}
 
 let monsterForm = document.querySelector("#monsterform form");
 let monster1name = document.querySelector("#m1name");
@@ -198,8 +203,8 @@ monsterForm.addEventListener("submit", (event) => {
         assignStatsAndName("m1");
         assignStatsAndName("m2");
 
-        document.querySelector("#m1 img").setAttribute("src", `${pixelMonsterImg}`);
-        document.querySelector("#m2 img").setAttribute("src", `${pixelMonsterImg2}`);
+        document.querySelector("#m1 img").setAttribute("src", `${pixelMonsterImg}${pixelMonsterSizes.m1}`);
+        document.querySelector("#m2 img").setAttribute("src", `${pixelMonsterImg2}${pixelMonsterSizes.m2}`);
 
         document.querySelector("#m1str").textContent = `STR: ${monsterAttributes.m1attributes.stats.STR}`;
         document.querySelector("#m1agi").textContent = `AGI: ${monsterAttributes.m1attributes.stats.AGI}`;
@@ -219,6 +224,10 @@ monsterForm.addEventListener("submit", (event) => {
 
         document.querySelector("#monsterform").style.display = "none";
         document.querySelector("#fightform").style.display = "grid";
+        document.querySelector(".fight").style.display = "grid";
+
+        pixelMonsterSizes.m1--
+        pixelMonsterSizes.m2--
     }
 
     monsterForm.reset();
@@ -344,7 +353,7 @@ document.querySelector("#fightbutton button").addEventListener("click", (event) 
 
         document.querySelector("#loglist").append(drawLi);
 
-        document.querySelector("#fightform").style.display = "none";
+        document.querySelector(".fight").style.display = "none";
         document.querySelector("#resetbutton").style.display = "inline";
     } else if (monsterAttributes.m1attributes.HP <= 0) {
         document.querySelector("#m1hp").textContent = "HP: 0";
@@ -359,7 +368,7 @@ document.querySelector("#fightbutton button").addEventListener("click", (event) 
 
         document.querySelector("#loglist").append(winLi);
 
-        document.querySelector("#fightform").style.display = "none";
+        document.querySelector(".fight").style.display = "none";
         document.querySelector("#resetbutton").style.display = "inline";
     } else if (monsterAttributes.m2attributes.HP <= 0) {
         document.querySelector("#m2hp").textContent = "HP: 0";
@@ -374,7 +383,7 @@ document.querySelector("#fightbutton button").addEventListener("click", (event) 
 
         document.querySelector("#loglist").append(winLi);
 
-        document.querySelector("#fightform").style.display = "none";
+        document.querySelector(".fight").style.display = "none";
         document.querySelector("#resetbutton").style.display = "inline";
     }
 })
@@ -386,6 +395,9 @@ function removeAllChildNodes(parent) {
 }
 
 document.querySelector("#resetbutton button").addEventListener("click", (event) => {
+    pixelMonsterSizes.m1++
+    pixelMonsterSizes.m2++
+
     document.querySelector("#m1stats").style.visibility = "hidden"
     document.querySelector("#m2stats").style.visibility = "hidden"
 
