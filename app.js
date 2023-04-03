@@ -131,7 +131,7 @@ function assignStatsAndName(monster) {
         statsObj.stats.AGI += getRandomInt(8, 15);
         statsObj.stats.INT += getRandomInt(3, 5);
 
-        statsObj.class = "caster";
+        statsObj.class = "archer";
 
         let attack = document.createElement("option");
         attack.setAttribute("value", "Shoot");
@@ -430,6 +430,9 @@ document.querySelector("#resetbutton button").addEventListener("click", (event) 
 
     document.querySelector("#m1").style["box-shadow"] = " 0px 0px 15px aliceblue, 0px 5px 20px aliceblue"
     document.querySelector("#m2").style["box-shadow"] = " 0px 0px 15px aliceblue, 0px 5px 20px aliceblue"
+
+    document.querySelector("#m1fight").firstChild.remove()
+    document.querySelector("#m2fight").firstChild.remove()
 })
 
 infoSplash.addEventListener("click", (event) => {
