@@ -105,6 +105,7 @@ header h1 {
     width: 10px;
     height: 10px;
     transition: width 1s, height 1s;
+    visibility: hidden;
 }
 
 #m1stats:hover,

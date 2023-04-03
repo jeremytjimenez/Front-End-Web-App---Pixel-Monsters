@@ -183,6 +183,9 @@ monsterForm.addEventListener("submit", (event) => {
 
     infoSplash.textContent = "";
 
+    document.querySelector("#m1stats").style.visibility = "visible"
+    document.querySelector("#m2stats").style.visibility = "visible"
+
     if (!(monster1name.value) || !(monster2name.value)) {
         infoSplash.style.display = "grid";
         infoSplash.innerHTML = `<img src="./assets/Super_Angry_Face_Emoji_ios10_1024x1024.png">Monsters must have a name!`;
@@ -383,6 +386,9 @@ function removeAllChildNodes(parent) {
 }
 
 document.querySelector("#resetbutton button").addEventListener("click", (event) => {
+    document.querySelector("#m1stats").style.visibility = "hidden"
+    document.querySelector("#m2stats").style.visibility = "hidden"
+
     document.querySelector("#resetbutton").style.display = "none";
 
     removeAllChildNodes(document.querySelector("#loglist"));
