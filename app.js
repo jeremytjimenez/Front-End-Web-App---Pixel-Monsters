@@ -344,7 +344,7 @@ document.querySelector("#fightbutton button").addEventListener("click", (event) 
 
         document.querySelector("#loglist").append(drawLi);
 
-        document.querySelector(".fight").style.display = "none";
+        document.querySelector("#fightform").style.display = "none";
         document.querySelector("#resetbutton").style.display = "inline";
     } else if (monsterAttributes.m1attributes.HP <= 0) {
         document.querySelector("#m1hp").textContent = "HP: 0";
@@ -359,7 +359,7 @@ document.querySelector("#fightbutton button").addEventListener("click", (event) 
 
         document.querySelector("#loglist").append(winLi);
 
-        document.querySelector(".fight").style.display = "none";
+        document.querySelector("#fightform").style.display = "none";
         document.querySelector("#resetbutton").style.display = "inline";
     } else if (monsterAttributes.m2attributes.HP <= 0) {
         document.querySelector("#m2hp").textContent = "HP: 0";
@@ -374,7 +374,7 @@ document.querySelector("#fightbutton button").addEventListener("click", (event) 
 
         document.querySelector("#loglist").append(winLi);
 
-        document.querySelector(".fight").style.display = "none";
+        document.querySelector("#fightform").style.display = "none";
         document.querySelector("#resetbutton").style.display = "inline";
     }
 })
@@ -415,6 +415,9 @@ document.querySelector("#resetbutton button").addEventListener("click", (event) 
     document.querySelector("#m2hp").innerHTML = `HP: <span id="m2hpnumber">???</span>`;
 
     document.querySelector("#m2boxname").textContent = `???`;
+
+    document.querySelector("#m1").style["box-shadow"] = " 0px 0px 15px aliceblue, 0px 5px 20px aliceblue"
+    document.querySelector("#m2").style["box-shadow"] = " 0px 0px 15px aliceblue, 0px 5px 20px aliceblue"
 })
 
 infoSplash.addEventListener("click", (event) => {
