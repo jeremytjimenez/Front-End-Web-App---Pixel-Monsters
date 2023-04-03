@@ -48,3 +48,21 @@ main div {
     grid-template-rows: 1fr 1fr;
 }
 
+@media (max-width: 1199px) {
+    #aboutpage {
+        font-size: 30px;
+        padding: 50px;
+        color: red;
+        box-shadow: none;
+        border-radius: 0;
+        background-image: none;
+    }
+
+    #aboutpage:hover {
+        box-shadow: none
+    }
+
+    body {
+        grid-template-rows: 50px 500px;
+    }
+}
