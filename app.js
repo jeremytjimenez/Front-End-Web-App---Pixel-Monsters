@@ -7,10 +7,10 @@ let monster1warrior = document.querySelector("#m1warrior");
 let monster1caster = document.querySelector("#m1caster");
 let monster1archer = document.querySelector("#m1archer");
 
-let monster2name = document.querySelector("#m1name");
-let monster2warrior = document.querySelector("#m1warrior");
-let monster2caster = document.querySelector("#m1caster");
-let monster2archer = document.querySelector("#m1archer");
+let monster2name = document.querySelector("#m2name");
+let monster2warrior = document.querySelector("#m2warrior");
+let monster2caster = document.querySelector("#m2caster");
+let monster2archer = document.querySelector("#m2archer");
 
 let m1action = document.querySelector("#m1fight");
 let m2action = document.querySelector("#m2fight");
