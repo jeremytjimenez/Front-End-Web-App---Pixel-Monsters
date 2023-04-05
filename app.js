@@ -226,8 +226,8 @@ monsterForm.addEventListener("submit", (event) => {
         document.querySelector("#fightform").style.display = "grid";
         document.querySelector(".fight").style.display = "grid";
 
-        pixelMonsterSizes.m1--
-        pixelMonsterSizes.m2--
+        // pixelMonsterSizes.m1--
+        // pixelMonsterSizes.m2--
     }
 
     monsterForm.reset();
